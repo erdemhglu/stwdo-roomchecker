@@ -1,0 +1,25 @@
+{
+  "name": "roomchecker",
+  "version": "1.0.0",
+  "description": "Automatic room checking system with Telegram notifications",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop roomchecker",
+    "pm2:restart": "pm2 restart roomchecker",
+    "pm2:logs": "pm2 logs roomchecker",
+    "pm2:monit": "pm2 monit"
+  },
+  "keywords": ["room", "checker", "telegram", "bot", "automation"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
