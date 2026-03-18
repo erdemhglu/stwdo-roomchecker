@@ -62,7 +62,7 @@ npm run pm2:stop
 To get your Telegram chat ID:
 
 ```bash
-node get_chat_id.py
+node get_chat_id.js
 ```
 
 ## Project files
