@@ -20,7 +20,6 @@ Roomchecker periodically checks housing listings on `stwdo.de` and sends a Teleg
 
 ```bash
 npm install
-pip install -r requirements.txt
 ```
 
 ### 2) Environment variables
