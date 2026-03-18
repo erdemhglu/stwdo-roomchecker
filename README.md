@@ -6,13 +6,12 @@ Roomchecker periodically checks housing listings on `stwdo.de` and sends a Teleg
 
 - Automatic checks at fixed intervals
 - Telegram notification support
-- Run options with Node.js and Python
+- Run options with Node.js
 - Continuous background execution with PM2
 
 ## Requirements
 
 - Node.js 18+
-- Python 3.10+
 - Telegram bot token and chat ID
 
 ## Setup
@@ -58,25 +57,18 @@ npm run pm2:restart
 npm run pm2:stop
 ```
 
-### With Python
-
-```bash
-python form_request.py
-```
-
 ## Find Chat ID
 
 To get your Telegram chat ID:
 
 ```bash
-python get_chat_id.py
+node get_chat_id.py
 ```
 
 ## Project files
 
 - `index.js`: Main Node.js application
-- `form_request.py`: Python checker script
-- `get_chat_id.py`: Chat ID finder script
+- `get_chat_id.js`: Chat ID finder script
 - `ecosystem.config.js`: PM2 runtime configuration
 - `.env.example`: Example environment variables
 
